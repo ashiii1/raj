@@ -2,7 +2,7 @@ import './App.css';
 
 function App() {
   return (
-  
+  <>
       <div className="App">
         <div className='first-nav'>
           <p>Purchase two eligible seasonal products to receive a karst Eau de parfum. <a href='https://www.aesop.com/hk/en/r/summertime-allies/'>Browse formulations</a></p>
@@ -46,13 +46,12 @@ function App() {
             </ul>
           </ul>
         </div>
-
-      <div className="image-container">
-        <img className="image" src="https://www.aesop.com/u1nb1km7t5q7/7Imo9dLHKBnqUO6aWwOyni/6a842852ce91de8e786a9e0f930237e9/Aesop_Gifting_2024_Mothers_Day_Web_Homepage_Primary_Full_Bleed_Desktop_5120x1856px.jpg" alt="img"/>
-      </div>
-      </div>
-      </div>
-    
+    </div>
+    <div className="image-container">
+    <img  className="images" src="https://www.aesop.com/u1nb1km7t5q7/7Imo9dLHKBnqUO6aWwOyni/6a842852ce91de8e786a9e0f930237e9/Aesop_Gifting_2024_Mothers_Day_Web_Homepage_Primary_Full_Bleed_Desktop_5120x1856px.jpg" alt="L"/>
+    </div>
+    </div>
+    </>
   );
 }
 

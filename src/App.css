@@ -1,9 +1,10 @@
-/* body {
+body{
   margin: 0;
   padding: 0;
-  background-color: #252525;
-  color: #bcbbb4;
-} */
+    background-color: #252525;
+    color: #bcbbb4;
+}
+
 
 .first-nav {
   background-color: #c2c2af;
@@ -34,17 +35,15 @@
   margin-top: 7px;
   z-index: 999; /* Ensure it appears below the first navbar */
 }
-
 .third-nav {
   background-color: #FFFEF2;
   pointer-events: auto;
   color: #0c0c0b;
   width: 100%; /* Span the full width */
-  height: 80px;
   border-bottom: transparent; /* Thin border at the bottom */
   padding: 11px 1px; /* Minimal padding */
   z-index: 998;
-  margin-top: 95px; /* Adjust this value to move the third navbar below the first and second navbars */
+  margin-top: 75px; /* Adjust this value to move the third navbar below the first and second navbars */
   box-sizing: border-box; /* Include padding and border in the element's total width */
   display: flex; /* Use flexbox */
   align-items: center; /* Align items vertically */
@@ -54,24 +53,24 @@
 .nav-items {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 30;
 }
 
 .nav-items ul li {
   display: inline-block;
-  margin:  0 10px; /* Adjust spacing between items */
-  font-family: "Arial", sans-serif; /* Change the font family here */
+  margin: 0 10px; /* Adjust spacing between items */
+  font-family: "Arial", sans-serif; /* Change the font family here */ font-family: "Arial", sans-serif; /* Change the font family here */
   font-size: 14px; /* Decrease the font size */
   font-weight: 530; /* Increase the font weight (bold) */
   color: rgb(10, 10, 10); /* Increase blackness */
-}
 
+}
 .second-list {
   list-style-type: none;
   margin: 0;
   padding: 10;
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 
 .second-list li {
@@ -79,7 +78,7 @@
   font-size: 14px;
   font-weight: 700;
   color: black;
-  margin-left: 20px; /* Adjust the margin between list items */
+  margin-left: 50px; /* Adjust the margin between list items */
 }
 
 .third-nav .nav-items ul .search-icon {
@@ -100,29 +99,17 @@
   align-items: center; /* Align the search icon vertically with other list items */
 }
 
-.App {
-  text-align: center;
-}
-/* CSS */
-/* CSS */
-
-/* CSS */
-
-.body {
-  margin-top: 135px; /* Adjust as needed */
-}
-
 .image-container {
   width: 100%;
-  height: calc(100vh - 135px); /* Adjust based on navbar height */
-  overflow: hidden;
-  position: relative;
+  height: 75vh; /* 75% of the viewport height */
+  overflow: hidden; /* Hide any overflowing content */
 }
 
-.image {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 80px; /* Adjust based on the height of the third navbar */
-  left: 0;
+.images {
+  width: 100%; /* Make the image width full */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.App{
+  text-align: center;
 }
