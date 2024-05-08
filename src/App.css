@@ -1,38 +1,128 @@
+/* body {
+  margin: 0;
+  padding: 0;
+  background-color: #252525;
+  color: #bcbbb4;
+} */
+
+.first-nav {
+  background-color: #c2c2af;
+  color: #333;
+  width: 100%; /* Span the full width */
+  border-bottom: 1px solid black; /* Thin border at the bottom */
+  margin: 0; /* Remove any margins */
+  position: fixed; /* Stick navbar to the top */
+  top: 0;
+  height: 45px; /* Adjust height to make it thinner horizontally */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.second-nav {
+  background-color: #252525;
+  color: #fffef2;
+  width: 100%; /* Span the full width */
+  border-bottom: 0.2px solid black; /* Thin border at the bottom */
+  padding: 4px 1px; /* Minimal padding */
+  margin: 0; /* Remove any margins */
+  position: fixed; /* Set position to relative */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  top: 30px; /* Adjust top position to make it appear below the first navbar */
+  height: 55px; /* Adjust height to make it thinner horizontally */
+  margin-top: 7px;
+  z-index: 999; /* Ensure it appears below the first navbar */
+}
+
+.third-nav {
+  background-color: #FFFEF2;
+  pointer-events: auto;
+  color: #0c0c0b;
+  width: 100%; /* Span the full width */
+  height: 80px;
+  border-bottom: transparent; /* Thin border at the bottom */
+  padding: 11px 1px; /* Minimal padding */
+  z-index: 998;
+  margin-top: 95px; /* Adjust this value to move the third navbar below the first and second navbars */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space items evenly along the main axis */
+}
+
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items ul li {
+  display: inline-block;
+  margin:  0 10px; /* Adjust spacing between items */
+  font-family: "Arial", sans-serif; /* Change the font family here */
+  font-size: 14px; /* Decrease the font size */
+  font-weight: 530; /* Increase the font weight (bold) */
+  color: rgb(10, 10, 10); /* Increase blackness */
+}
+
+.second-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  display: flex;
+  align-items: center;
+}
+
+.second-list li {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  margin-left: 20px; /* Adjust the margin between list items */
+}
+
+.third-nav .nav-items ul .search-icon {
+  margin-right: auto; /* Push the search icon to the left as much as possible */
+}
+
+.third-nav .nav-items ul {
+  display: flex;
+  align-items: center;
+}
+
+.third-nav .nav-items ul li {
+  margin-right: 13px; /* Adjust the margin between list items */
+}
+
+.search-icon {
+  display: flex;
+  align-items: center; /* Align the search icon vertically with other list items */
+}
+
 .App {
   text-align: center;
 }
+/* CSS */
+/* CSS */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* CSS */
+
+.body {
+  margin-top: 135px; /* Adjust as needed */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container {
+  width: 100%;
+  height: calc(100vh - 135px); /* Adjust based on navbar height */
+  overflow: hidden;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 80px; /* Adjust based on the height of the third navbar */
+  left: 0;
 }
