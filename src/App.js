@@ -199,7 +199,7 @@ This practical and playful tool designed to aid in choosing a suitable offering 
     */}
 
 
-<section className='section-5'>
+<section className='section-5' >
   <div className='items-last'>
   <Footer/>
   </div>

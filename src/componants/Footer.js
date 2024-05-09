@@ -5,14 +5,12 @@ const Footer = () => {
     <div className="max-w-[1520px] m-auto px-4 py-2 bg-[#24262b]">
       <div className="py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300">
         <div className="col-span-1">
-          <h1 className="w-full text-3xl font-bold text-orange-500">YumEats</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
             ullam iste repellat consequatur libero reiciendis, blanditiis
             accusantium.
           </p>
           <div className="mt-6">
-            
             <form className="flex items-center">
               <input
                 type="email"
