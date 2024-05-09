@@ -1,53 +1,66 @@
-body{
+body {
   margin: 0;
   padding: 0;
-    background-color: #252525;
-    color: #bcbbb4;
+  color: #bcbbb4;
+  background-color: #fffef2;
 }
-
 
 .first-nav {
   background-color: #c2c2af;
   color: #333;
-  width: 100%; /* Span the full width */
-  border-bottom: 1px solid black; /* Thin border at the bottom */
-  margin: 0; /* Remove any margins */
-  position: fixed; /* Stick navbar to the top */
+  width: 100%;
+  border-bottom: 1px solid black;
+  margin: 0;
+  position: fixed;
   top: 0;
-  height: 45px; /* Adjust height to make it thinner horizontally */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
-  z-index: 1000; /* Ensure it appears above other content */
+  height: 45px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.first-nav a.formulation-link {
+  color: #000;
+  text-decoration: none;
 }
 
 .second-nav {
   background-color: #252525;
   color: #fffef2;
-  width: 100%; /* Span the full width */
-  border-bottom: 0.2px solid black; /* Thin border at the bottom */
-  padding: 4px 1px; /* Minimal padding */
-  margin: 0; /* Remove any margins */
-  position: fixed; /* Set position to relative */
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
-  top: 30px; /* Adjust top position to make it appear below the first navbar */
-  height: 55px; /* Adjust height to make it thinner horizontally */
+  width: 100%;
+  border-bottom: 0.2px solid black;
+  padding: 4px 1px;
+  margin: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  top: 30px;
+  height: 55px;
   margin-top: 7px;
-  z-index: 999; /* Ensure it appears below the first navbar */
+  z-index: 999;
 }
+
+.second-nav p.second-nav-para {
+  text-decoration: none;
+}
+
+.second-nav p.second-nav-para:hover {
+  text-decoration: underline;
+}
+
 .third-nav {
-  background-color: #FFFEF2;
+  background-color: #fffef2;
   pointer-events: auto;
   color: #0c0c0b;
-  width: 100%; /* Span the full width */
-  border-bottom: transparent; /* Thin border at the bottom */
-  padding: 11px 1px; /* Minimal padding */
+  width: 100%;
+  border-bottom: transparent;
+  padding: 11px 1px;
   z-index: 998;
-  margin-top: 75px; /* Adjust this value to move the third navbar below the first and second navbars */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
-  display: flex; /* Use flexbox */
-  align-items: center; /* Align items vertically */
-  justify-content: space-between; /* Space items evenly along the main axis */
+  margin-top: 89px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-items {
@@ -58,13 +71,14 @@ body{
 
 .nav-items ul li {
   display: inline-block;
-  margin: 0 10px; /* Adjust spacing between items */
-  font-family: "Arial", sans-serif; /* Change the font family here */ font-family: "Arial", sans-serif; /* Change the font family here */
-  font-size: 14px; /* Decrease the font size */
-  font-weight: 530; /* Increase the font weight (bold) */
-  color: rgb(10, 10, 10); /* Increase blackness */
-
+  margin: 0 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 530;
+  color: rgb(10, 10, 10);
+  cursor: pointer;
 }
+
 .second-list {
   list-style-type: none;
   margin: 0;
@@ -78,11 +92,11 @@ body{
   font-size: 14px;
   font-weight: 700;
   color: black;
-  margin-left: 50px; /* Adjust the margin between list items */
+  margin-left: 50px;
 }
 
 .third-nav .nav-items ul .search-icon {
-  margin-right: auto; /* Push the search icon to the left as much as possible */
+  margin-right: auto;
 }
 
 .third-nav .nav-items ul {
@@ -91,25 +105,137 @@ body{
 }
 
 .third-nav .nav-items ul li {
-  margin-right: 13px; /* Adjust the margin between list items */
+  margin-right: 13px;
 }
 
 .search-icon {
   display: flex;
-  align-items: center; /* Align the search icon vertically with other list items */
+  align-items: center;
 }
 
-.image-container {
-  width: 100%;
-  height: 75vh; /* 75% of the viewport height */
-  overflow: hidden; /* Hide any overflowing content */
+.image-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .images {
-  width: 100%; /* Make the image width full */
-  height: auto; /* Maintain aspect ratio */
+  display: flex;
+  overflow-x: hidden;
 }
 
-.App{
+.img1{
+  width: 100%;
+}
+
+.images img {
+  width: 100%;
+  height: 68vh;
+}
+
+
+.section-2 {
+  height: 90vh; 
+  padding-top: 20px; 
+}
+
+
+.items2 {
+  display: flex;
+  width: 600%;
+  height: 70vh; 
+  margin-top: 100px;
+}
+.section-2 .carousel-controls {
+  position: absolute;
+  top: 130%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  
+  justify-content: space-between;
+}
+
+.section-2 .carousel-controls .arrow {
+  cursor: pointer;
+  background: transparent;
+  font-size: 18px;
+  color: #585757;
+  outline: auto;
+  padding: 10px;
+}
+
+.section-2 .carousel-controls .left-arrow {
+  left: 20px;
+}
+
+.section-2 .carousel-controls .right-arrow {
+  right: 20px;
+}
+
+
+.section-3 {
+  height: 100vh; 
+  padding-top: 20px; 
+}
+.section3 img{
+  align-items: flex-start;
+}
+
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  position: absolute;
+  bottom: -35px;
+  width: 100%;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+}
+
+.page-numbers span {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.page-numbers .current-page {
+  color: #4b4949;
+  font-weight: bold;
+}
+
+.arrow {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  color: #585757;
+  outline: none;
+  padding: 10px;
+}
+
+.section-4{
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.section-5{
+  background-color: #252525;
+}
+
+
+
+
+
+
+
+
+.App {
   text-align: center;
 }
