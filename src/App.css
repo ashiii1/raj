@@ -233,10 +233,149 @@ body {
 
 
 
+.section-l {
+  width: 100%;
+  display: inline-block;
+  background: #68837B;
+  color:#6EA288 ;
+  height: 10vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+#footer {
+  width: 100%;
+  height: 70vh;
+  display: inline-block;
+  margin: 0 auto;
+  background:#63636F ;
+  color:#dbdbdb;
+}
+
+#footer .logo img {
+  width: 50px;
+  float: left;
+}
+
+#footer ul li a{color:#DEA963;}
+.foot-col-1 {
+  width: 30%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.foot-col-2 {
+  width: 18%;
+  display: inline-block;
+}
+
+.foot-col-3 {
+  width: 18%;
+  display: inline-block;
+}
+
+.foot-col-4 {
+  width: 30%;
+  display: inline-block;
+}
+
+@media (max-width:1085px) {
+  .foot-col-1, .foot-col-4 {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .foot-col-2,
+  .foot-col-3 {
+width:49%;
+  }
+}
+
+@media (max-width:800px) {
+  .lh-footer, .mid-footer, .rh-footer {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 
 
 
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 200px;
+  margin-top: 20px;
+  top: 290px;
+  margin: 0 auto;
+  overflow: hidden;
+}
 
+.carouselArea {
+  position: relative;
+  width: 100%; 
+  overflow: hidden;
+}
+.carouselPosts {
+  display: flex;
+  width: 100%; /* Ensure the carousel takes the full width */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  scroll-snap-type: x mandatory; /* Enable snapping to each image */
+}
+
+.carouselPostBox {
+  flex: 0 0 auto; /* Let each image take the necessary space */
+  width: 100%; /* Ensure each image takes the full width */
+  scroll-snap-align: center; /* Ensure each image is centered */
+  margin-right: 20px; /* Add space between images if needed */
+}
+
+.carouselPostBox-image {
+  width: 100%;
+  height: auto; /* Allow the image to adjust its height while maintaining aspect ratio */
+}
+.carouselPostBox-title {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.carouselPostBox-desc {
+  padding: 10px;
+}
+
+.controlLeft,
+.controlRight {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.controlLeft:hover,
+.controlRight:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.controlLeft {
+  left: -30px;
+}
+
+.controlRight {
+  right: 10px;
+}
 
 .App {
   text-align: center;
