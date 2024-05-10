@@ -1,37 +1,40 @@
+
+
+
 import React, { useState } from 'react';
 import '../App.css';
 
 const imageArray = [
     {
-        image: "https://images.ctfassets.net/u1nb1km7t5q7/3QfGNj3NpYM5h3zLpQHWK0/6ac142e435309dc51f2dc2e477b54a95/Aesop_Skin_Lucent_Facial_Concentrate_60mL_Web_Large_684x668px.png",
+        image: "https://www.aesop.com/u1nb1km7t5q7/1qKF9KcniWuX07rpfHmHoB/afd3fd8b4d7a79be87ec8a66c0021a7e/Aesop_Skin_Protective_Facial_Lotion_SPF50_50mL_Web_Front_X-Large_3000x3054px.png",
         title: "",
         desc: ""
     },
     {
-        image: "https://images.ctfassets.net/u1nb1km7t5q7/5j7ZCC88yr7bP12pqQ7U3J/a8960395f990b42362f28a176d8df983/Aesop_Skin_Sublime_Replenishing_Night_Masque_60mL_Web_Medium_704x374px.png",
+        image: "https://www.aesop.com/u1nb1km7t5q7/7rQwKlCTwpQ5vNOQBwg7KA/8c79ad1019aa5dfe09583f5a02c77701/Aesop_Skin_Protective_Facial_Lotion_SPF25_Asia_EU_Web_Large_782x796px.png",
         title: "",
         desc: ""
     },
     {
-        image: "https://images.ctfassets.net/u1nb1km7t5q7/dOnBqAYKjyXt8FPq50qg7/8ebfb48f20f70b61782149da3d26266d/Aesop_Skin_Lucent_Facial_Concentrate_60mL_Web_Medium_535x522px.png",
+        image: "https://www.aesop.com/u1nb1km7t5q7/6497Z5CI7aE6GSSkpLHqou/9180575f7cab867e82df9436207a6c71/Aesop_Body_Protective_Body_Lotion_SPF50_Asia_EU_150mL_Web_Front_X-Large_3000x3456px.png",
         title: "",
         desc: ""
     },
     {
-        image: "https://images.ctfassets.net/u1nb1km7t5q7/5j7ZCC88yr7bP12pqQ7U3J/a8960395f990b42362f28a176d8df983/Aesop_Skin_Sublime_Replenishing_Night_Masque_60mL_Web_Medium_704x374px.png",
+        image: "https://www.aesop.com/u1nb1km7t5q7/3vyJxHFKnFJHT4PGafyPqU/9704272f3c9eb199098d4ea28f51ba0c/Aesop_Skin_Sage_and_Zinc_Facial_Hydrating_Lotion_SPF15_50mL_Web_X-Large_1173x1194px.png",
         title: "",
         desc: ""
     },
     {
-        image: "https://www.aesop.com/u1nb1km7t5q7/5puVF2R6wEAclEYaWnwkCh/beca7f94e3ae088337ccdf9a16c67d11/Aesop_Skin_Exalted_Eye_Serum_15ml_Web_Large_684x668px.png",
+        image: "https://www.aesop.com/u1nb1km7t5q7/D2FJEA5pA57WNR6Crjerl/5a9f34865fac2097cf46d5d30822c79c/Aesop_Body_Petitgrain_Reviving_Body_Gel_150mL_Web_Front_X-Large_3000x3456px.png",
         title: "",
         desc: ""
     },
     {
-        image: "https://images.ctfassets.net/u1nb1km7t5q7/dOnBqAYKjyXt8FPq50qg7/8ebfb48f20f70b61782149da3d26266d/Aesop_Skin_Lucent_Facial_Concentrate_60mL_Web_Medium_535x522px.png",
+        image: "https://www.aesop.com/u1nb1km7t5q7/7pSX4Pu6HnCjxoAI6wumyi/228cf97bf6d53cb2cfde1d33c251db38/Aesop_Fragrance_Rozu_Eau_de_Parfum_50mL_Web_Front_X-Large_3000x2930px.png",
         title: "",
         desc: ""
-    },
+    },//
     {
         image: "https://www.aesop.com/u1nb1km7t5q7/63tJ9VwYYIp1EjOJJtzejf/7b3547dce05e449b122c703a91644ec5/Aesop_Home_Aganice_Aromatique_Candle_Web_Front_A_Large_1800x1573px.png",
         title: "",
@@ -58,7 +61,7 @@ const Carousel = () => {
     };
 
     return (
-        <section className="section-two">
+        <section className="section-fi">
             <div className="carouselContainer">
                 <div className="carouselArea">
                     <div className="carouselPosts" style={{ transform: `translateX(-${nowIndex * 50}%)` }}>
